@@ -1,3 +1,21 @@
+:root {
+  --backgroundColor: #151615;
+  --textColor: #dbdfdf;
+  --secondaryTextColor: #cfd5d5;
+  --mutedTextColor: #b4b6b8;
+  --subtleBackgroundColor: #3a3b3b;
+  --heartedBackgroundColor: #652222;
+  --selectionBackgroundColor: #19446b;
+  --linkColor: #6eb8ff;
+  --borderColor: #414141;
+  --hrColor: #888;
+  --activeColor: #74d274;
+  --langBackgroundColor: #2c2c2c;
+  --langShadowColor: #0b0c0b33;
+  --logoColor: #555555;
+  --photoBackground: #1a1a1a;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -6,6 +24,19 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
-  color: white;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+#main {
+  width: 100%;
+}
+
+.container {
+  max-width: 36em;
+  display: flex;
+}
+
+.column-flex {
+  flex-direction: column;
 }
